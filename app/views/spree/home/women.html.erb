@@ -1,0 +1,6 @@
+<div class="grid_2">
+	<%=link_to( image_tag('store/women_featured.jpg'), @women_featured, :class => "women_featured") %>
+</div><!-- grid_2 -->
+<% @products.each do |product| %>
+<div class="grid_1"><%= product.name %><%= product_image(product, :itemprop => "image") %></div>
+<% end %>
